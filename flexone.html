@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+        }
+
+        .item {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #666;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        /* 二点 */
+        .boxtwo {
+            justify-content: space-between;
+        }
+
+        .boxtwo .item:nth-of-type(2) {
+            align-self: flex-end;
+        }
+
+        /* 三点 */
+        .boxthree {
+            justify-content: space-between;
+        }
+
+        .boxthree .item:nth-of-type(2) {
+            align-self: center;
+        }
+
+        .boxthree .item:nth-of-type(3) {
+            align-self: flex-end;
+        }
+
+        /* 四点 */
+        .boxfour {
+            justify-content: space-around;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box boxone">
+        <span class="item"></span>
+    </div>
+
+
+    <div class="box boxtwo">
+        <span class="item "></span>
+        <span class="item "></span>
+    </div>
+
+    <div class="box boxthree">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+
+    <div class="box boxfour">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+
+    <div class="box boxfive">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <div class="box boxsix">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</body>
+
+</html>
