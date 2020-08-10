@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入框布局</title>
+    <style>
+        .box {
+            display: flex;
+            margin: 10px;
+        }
+
+        .inputone {
+            flex: 1;
+            border: 1px solid #aaccbb;
+            border-radius: 3px;
+            margin: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="info">邮箱</span>
+        <input type="text" class="inputone">
+        <button class="btnone">提交</button>
+    </div>
+
+    <div class="box">
+        <span class="info">密码</span>
+        <input type="password" class="inputone">
+        <button class="btnone">提交</button>
+    </div>
+</body>
+
+</html>

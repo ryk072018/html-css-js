@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            font-size: 1.25em;
+        }
+
+        header {
+            background-color: #ccc;
+            /* flex: 1; */
+            flex-grow: 1;
+        }
+
+        .box {
+            background-color: #666;
+            display: flex;
+            /* flex: 12; */
+            flex-grow: 12;
+        }
+
+        .nav {
+            flex-grow: 1;
+            /* flex: 1; */
+            background-color: #cc3322;
+        }
+
+        .main {
+            /* flex: 4; */
+            flex-grow: 4;
+            background-color: #55ccaa;
+
+        }
+
+        .rightaside {
+            /* flex: 1; */
+            flex-grow: 1;
+            background-color: #99aa22;
+        }
+
+        footer {
+            background-color: #999;
+            /* flex: 1; */
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav {
+                /* flex: 1; */
+                flex-grow: 1;
+            }
+
+            .main {
+                /* flex: 8; */
+                flex-grow: 8;
+            }
+
+            .rightaside {
+                /* flex: 1; */
+                flex-grow: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>头部</header>
+    <div class="box">
+        <nav class="nav">
+            nav
+        </nav>
+        <main class="main">
+            main
+        </main>
+        <aside class="rightaside">
+            aside
+        </aside>
+    </div>
+    <footer>底部</footer>
+
+
+</body>
+
+</html>
