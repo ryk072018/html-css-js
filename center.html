@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水平垂直居中</title>
     <style>
+        body {
+            display: flex;
+        }
+
         .box {
             width: 200px;
             height: 200px;
             background-color: #ccc;
             margin: 10px;
+
         }
 
         .boxone {
@@ -50,6 +55,17 @@
             height: 50px;
             margin: auto;
         }
+
+        /* 方法4 */
+        .boxfour {
+            display: grid;
+            place-items: center;
+        }
+
+        .four-item {
+            background-color: #8cc540;
+            color: #ff1244;
+        }
     </style>
 </head>
 
@@ -64,6 +80,10 @@
 
     <div class="box boxthree">
         <div class="three-item">three</div>
+    </div>
+
+    <div class="box boxfour">
+        <div class="four-item">four</div>
     </div>
 </body>
 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五种经典布局</title>
+    <style>
+        .boxone {
+            width: 200px;
+            height: 200px;
+            display: grid;
+            place-items: center;
+            background-color: #a8e1ea;
+        }
+
+        /* 布局2 */
+        .boxtwo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .two-item {
+            flex: 0 1 200px;
+            margin: 10px;
+            background-color: #a8e1ea;
+        }
+
+        /* 布局3 */
+        .boxthree {
+            display: flex;
+            /* 指定页面分成n列 */
+            grid-template-columns: minmax(150px, 25%) 1fr;
+            /* background-color: #a8e121; */
+
+        }
+
+        .leftnav {
+            margin-right: 5px;
+            background-color: #a8e1ea;
+            height: 50vh;
+        }
+
+        .main {
+            background-color: #22e1ea;
+        }
+
+        /* 布局4 */
+        .boxfour {
+            display: grid;
+            /*  */
+            grid-template-rows: auto 1fr auto;
+            height: 50vh;
+        }
+
+        .four-header {
+            background-color: #ff8345;
+        }
+
+        .four-main {
+            background-color: #f8bd0b;
+        }
+
+        .four-footer {
+            background-color: #8cc540;
+        }
+
+        /* 布局5 */
+        .boxfive {
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+            height: 50vh;
+        }
+
+        .five-header {
+            background-color: #ff8345;
+            /* grid-column 用来指定网格项目的大小和位置 是grid-column-start 和 grid-column-end 的简写*/
+            grid-column: 1/4;
+        }
+
+        .five-footer {
+            background-color: #8cc540;
+            grid-column: 1/4;
+        }
+
+        .five-nav {
+            background-color: #4a58c0;
+            grid-column: 1/2;
+        }
+
+        .five-main {
+            background-color: #c4dd69;
+            grid-column: 2/3;
+        }
+
+
+        .five-aside {
+            background-color: #e652a3;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxone">
+        <div>center</div>
+    </div>
+
+    <div class="boxtwo">
+        <div class="two-item">1</div>
+        <div class="two-item">2</div>
+        <div class="two-item">3</div>
+    </div>
+    <hr />
+    <div class="boxthree">
+        <div class="leftnav">nav</div>
+        <div class="main">mian
+            使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；使用网格布局实现右边自动缩放；
+        </div>
+    </div>
+
+    <hr />
+    <div class="boxfour">
+        <header class="four-header">header</header>
+        <main class="four-main">main</main>
+        <footer class="four-footer">footer</footer>
+    </div>
+
+    <hr>
+    <div class="boxfive">
+        <header class="five-header">header</header>
+        <!-- <div class="fivecenter"> -->
+        <nav class="five-nav">nav</nav>
+        <main class="five-main">mian</main>
+        <aside class="five-aside">aside</aside>
+        <!-- </div> -->
+        <footer class="five-footer">footer</footer>
+    </div>
+</body>
+
+</html>
