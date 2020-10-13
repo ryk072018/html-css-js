@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>promise异步加载图片</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .app {
+                width: 700px;
+                margin: 0 auto;
+            }
+
+            .control {
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+            }
+
+            .showImg {
+                width: 200px;
+                height: 200px;
+                margin: 10px 5px;
+                border: 2px solid #eee;
+            }
+
+            .showImg:hover {
+                border: 2px solid #6CB83D;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="control">
+                <button class="btn-one">加载图片</button>
+            </div>
+        </div>
+
+        <script>
+            const imgs = [
+                'https://user-images.githubusercontent.com/27181965/93419920-97b7f680-f8e0-11ea-87f9-c1d8752a4a72.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419924-9a1a5080-f8e0-11ea-95d4-097eecbbb842.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419954-a2728b80-f8e0-11ea-8d4e-3b9bd6e120e9.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419930-9be41400-f8e0-11ea-81ba-61cbe80b2780.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419935-9c7caa80-f8e0-11ea-831f-42a5e3405bd3.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419928-9b4b7d80-f8e0-11ea-8542-f0f089c68178.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419939-9dadd780-f8e0-11ea-9358-c9753981da68.jpg',
+                'https://user-images.githubusercontent.com/27181965/93419946-9f779b00-f8e0-11ea-8de0-900c92dd79ca.png'
+            ];
+
+            let appEle = document.querySelector('.app');
+            let btnone = document.querySelector('.btn-one');
+            btnone.addEventListener('click', loadClick);
+
+
+            function loadClick() {
+                for (let i = 0; i < imgs.length; i++) {
+                    loadImgAsync(imgs[i]);
+                }
+            }
+
+            // promise方法
+            function loadImgAsync(url) {
+                return new Promise((resolve, reject) => {
+                    let img = new Image();
+                    img.onload = () => {
+                        resolve(img);
+                    }
+                    img.onerror = () => {
+                        reject(new Error(`没有发现${url}`))
+                    }
+                    img.src = url;
+                    img.className = 'showImg'
+                    appEle.appendChild(img);
+                })
+            };
+        </script>
+    </body>
+
+    </html>
