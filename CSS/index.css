@@ -6,12 +6,15 @@
 
 .app {
     margin: 0 auto;
+    background-color: #ccc;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .info {
     width: 100%;
     text-align: center;
-    background-color: #d1d2d4;
+    background-color: #5b89e5;
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
