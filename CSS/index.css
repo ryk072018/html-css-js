@@ -46,11 +46,11 @@
     text-align: center;
     border-radius: 10px;
     padding-top: 10px;
-    box-shadow: 10px 12px 2px #a7a5a5;
+    box-shadow: 0px 0px 10px #606060;
 }
 
 .column:hover {
-    box-shadow: 3px 3px 0px #999;
+    box-shadow: 2px 2px 0px #999;
 }
 
 .column h3 {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .column-one {
-    background-color: #ff8345;
+    background-color: #93DA90;
 
 }
 
