@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js风格指南</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js风格指南</title>
 </head>
 
 <body>
-    <div class="box">
-        <ul>
-            <li class="info">1</li>
-            <li class="info">2</li>
-            <li class="info">3</li>
-            <li class="info">4</li>
-            <li class="info">5</li>
-            <li class="info">6</li>
-            <li class="info">7</li>
-            <li class="info">8</li>
-            <li class="info">9</li>
-            <li class="info">10</li>
-        </ul>
-    </div>
-    <script>
-        const eleItems = document.querySelectorAll('.info');
-        console.log(eleItems);
-        const arrItems = [...eleItems]
-        console.log(arrItems);
+  <div class="box">
+    <ul>
+      <li class="info">1</li>
+      <li class="info">2</li>
+      <li class="info">3</li>
+      <li class="info">4</li>
+      <li class="info">5</li>
+      <li class="info">6</li>
+      <li class="info">7</li>
+      <li class="info">8</li>
+      <li class="info">9</li>
+      <li class="info">10</li>
+    </ul>
+  </div>
+  <script>
+    const eleItems = document.querySelectorAll('.info');
+    console.log(eleItems);
+    const arrItems = [...eleItems]
+    console.log(arrItems);
 
-        const nodes = Array.from(eleItems)
-        console.log(nodes)
-    </script>
+    const nodes = Array.from(eleItems)
+    console.log(nodes)
+  </script>
 </body>
 
 </html>

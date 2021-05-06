@@ -2,89 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>水平垂直居中</title>
-    <style>
-        body {
-            display: flex;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>水平垂直居中</title>
+  <style>
+    body {
+      display: flex;
+    }
 
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: #ccc;
-            margin: 10px;
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      margin: 10px;
 
-        }
+    }
 
-        .boxone {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .boxone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        /* 方法2 */
-        .boxtwo {
-            background-color: #66cc99;
-            position: relative;
-        }
+    /* 方法2 */
+    .boxtwo {
+      background-color: #66cc99;
+      position: relative;
+    }
 
-        .two-item {
-            background-color: #99cc11;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
+    .two-item {
+      background-color: #99cc11;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
 
-        /* 方法3 */
-        .boxthree {
-            position: relative;
-        }
+    /* 方法3 */
+    .boxthree {
+      position: relative;
+    }
 
-        .three-item {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            bottom: 10px;
-            right: 10px;
-            background-color: #aabbcc;
-            width: 50px;
-            height: 50px;
-            margin: auto;
-        }
+    .three-item {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      background-color: #aabbcc;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+    }
 
-        /* 方法4 */
-        .boxfour {
-            display: grid;
-            place-items: center;
-        }
+    /* 方法4 */
+    .boxfour {
+      display: grid;
+      place-items: center;
+    }
 
-        .four-item {
-            background-color: #8cc540;
-            color: #ff1244;
-        }
-    </style>
+    .four-item {
+      background-color: #8cc540;
+      color: #ff1244;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="box boxone">
-        <span class="item">hello</span>
-    </div>
+  <div class="box boxone">
+    <span class="item">hello</span>
+  </div>
 
-    <div class="box boxtwo">
-        <div class="two-item">two</div>
-    </div>
+  <div class="box boxtwo">
+    <div class="two-item">two</div>
+  </div>
 
-    <div class="box boxthree">
-        <div class="three-item">three</div>
-    </div>
+  <div class="box boxthree">
+    <div class="three-item">three</div>
+  </div>
 
-    <div class="box boxfour">
-        <div class="four-item">four</div>
-    </div>
+  <div class="box boxfour">
+    <div class="four-item">four</div>
+  </div>
 </body>
 
 </html>

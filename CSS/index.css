@@ -1,123 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .app {
-    margin: 0 auto;
-    background-color: #ccc;
-    height: 100vh;
-    overflow-y: scroll;
+  margin: 0 auto;
+  background-color: #ccc;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .info {
-    width: 96%;
-    margin: 5px auto;
-    box-shadow: inset 2px 2px 5px #000;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #5b89e5;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+  width: 96%;
+  margin: 5px auto;
+  box-shadow: inset 2px 2px 5px #000;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #5b89e5;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .info:hover {
-    box-shadow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 5px #ccc;
 }
 
 .origianl-add {
-    color: #000;
+  color: #000;
 }
 
 .info-img {
-
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
 }
 
 .box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .column {
-    margin: 10px;
-    min-width: 180px;
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 10px;
-    box-shadow: 0px 0px 10px #606060;
+  margin: 10px;
+  min-width: 180px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 0px 10px #606060;
 }
 
 .column:hover {
-    box-shadow: 2px 2px 0px #999;
+  box-shadow: 2px 2px 0px #999;
 }
 
 .column h3 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 3px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 3px;
 }
 
 .col-box {
-    max-height: 500px;
-    overflow-y: auto;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 li {
-    list-style-type: none;
-    margin: 10px;
+  list-style-type: none;
+  margin: 10px;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .column-one {
-    background-color: #93DA90;
-
+  background-color: #93da90;
 }
 
 .column-two {
-    background-color: #007cdc;
+  background-color: #007cdc;
 }
 
 .column-three {
-    background-color: #887ddd;
+  background-color: #887ddd;
 }
 
 .column-four {
-    background-color: #81D582;
+  background-color: #81d582;
 }
 
 .column-five {
-    background-color: #98B3DD;
+  background-color: #98b3dd;
 }
 
 .column-six {
-    background-color: #8CD995;
+  background-color: #8cd995;
 }
 
 .column-seven {
-    background-color: #6666FF;
+  background-color: #6666ff;
 }
 
 .column-eight {
-    background-color: #6699FF;
+  background-color: #6699ff;
 }
 
 .column-nine {
-    background-color: #AEDE9C;
+  background-color: #aede9c;
 }
 
 .column-ten {
-    background-color: #3399FF;
+  background-color: #3399ff;
 }
