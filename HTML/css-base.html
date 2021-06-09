@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css练习</title>
+  <style>
+    .app {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main {
+      width: 600px;
+    }
+
+    li {
+      list-style-position: inside;
+      border-bottom: 1px solid;
+      padding: 0.5em;
+    }
+
+
+    li:hover {
+      color: orangered;
+      cursor: pointer;
+    }
+
+
+    li:last-child {
+      border: none;
+    }
+
+
+    /* 关系型选择器 */
+    article {
+      border: 1px dashed #999;
+      padding: 10px;
+      background-color: #ccc;
+    }
+
+    article p {
+      color: #ce5834;
+    }
+
+    article>p {
+      color: #ac6e3c;
+    }
+
+    article section h2 {
+      border-bottom: 2px dashed #9e391f;
+    }
+
+    /* text-align 功能练习 */
+    .text-main {
+      border: 2px dashed #999;
+      margin: 10px 0px;
+    }
+
+    .text-info {
+      color: rgb(233, 128, 68);
+    }
+  </style>
+</head>
+
+<body class="app">
+  <div class="main">
+    <h2>喜欢的影视</h2>
+    <ol>
+      <li>三傻大闹宝莱坞</li>
+      <li>肖申克的救赎</li>
+      <li>美丽人生</li>
+      <li>生活大爆炸</li>
+      <li>盗梦空间</li>
+      <li>黑客帝国</li>
+    </ol>
+    <article>
+      <h1>电影世界</h1>
+      <p>
+        这是一个整理自己喜欢的电影的网站
+      </p>
+      <section>
+        <h2>科幻电影</h2>
+        <p>这是一个子类</p>
+      </section>
+    </article>
+    <div class="text-main">
+      <p class="set-one">
+        text-align:
+        <label><input name="radtext" type="radio" value="left">left</label>
+        <label><input name="radtext" type="radio" value="center">center</label>
+        <label><input name="radtext" type="radio" value="right">right</label>
+        <label><input name="radtext" type="radio" value="justify">justify</label>
+      </p>
+      <p class="set-two">
+        <label>字体大小：<input class="st-fontsize" type="range" value="16" max="30" min="12"></label>
+      </p>
+      <p class="set-two">
+        <label>单词间距：<input class="st-wordSpacing" type="range" value="1" max="5" min="1"></label>
+      </p>
+      <p class="set-two">
+        <label>字符间距：<input class="st-letterSpacing" type="range" value="1" max="5" min="1"></label>
+      </p>
+      <p class="set-two">
+        <label>字体颜色：<input class="st-color" type="color"></label>
+      </p>
+      <div class="text-info">
+        <p>
+          This is an example of text-aligning, implementing text left-center-right, hash alignment. What knowledge
+          points do you need to combine to achieve this function? This is a learning process that requires thinking and
+          exploring discoveries. Do I need JS to implement this feature? Can this be done with CSS?
+        </p>
+        <p>
+          这是一个text-align例子,实现文本左中右，散列对齐。实现这个功能需要哪些知识点进行组合？这是一个需要思考和探索发现学习过程。
+          实现这个功能需要用到JS吗？只是用CSS可以实现这个功能吗？</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // text-align设置
+    const textmain = document.querySelector('.set-one')
+    const inpObj = document.querySelectorAll('.set-one input')
+    const textinfo = document.querySelector('.text-info')
+
+    const handleChangeRadio = () => {
+      inpObj.forEach((item, i) => {
+        if (item.checked) {
+          textinfo.style.textAlign = item.value
+        }
+      })
+    }
+    textmain.addEventListener('click', handleChangeRadio, true)
+
+    // 字体大小，单词间距，字符间距设置
+    const stFontS = document.querySelector('.st-fontsize')
+    const stWordS = document.querySelector('.st-wordSpacing')
+    const stLetterS = document.querySelector('.st-letterSpacing')
+    const stColor = document.querySelector('.st-color')
+
+    const setFontSize = () => {
+      textinfo.style.fontSize = stFontS.value + 'px';
+    }
+
+    const setWord = () => {
+      textinfo.style.wordSpacing = stWordS.value + 'px';
+    }
+
+    const setLetter = () => {
+      textinfo.style.letterSpacing = stLetterS.value + 'px';
+    }
+
+    const setColor = () => {
+      textinfo.style.color = stColor.value
+    }
+
+    stFontS.addEventListener('change', setFontSize, true)
+    stWordS.addEventListener('change', setWord, false)
+    stLetterS.addEventListener('change', setLetter, false)
+    stColor.addEventListener('change', setColor, false)
+
+  </script>
+
+</body>
+
+</html>
