@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单练习</title>
+  <style>
+    .label-title {
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+    .textar-itle{
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <p>
+      <label class="label-title" for="">用户名：</label>
+      <input type="text">
+    </p>
+    <p>
+      <label class="label-title" for="">密码：</label>
+      <input type="password">
+    </p>
+    <p>
+      <label class="label-title" for="">年龄：</label>
+      <input type="number" value="18">
+    </p>
+    <p>
+      <label class="label-title" for="">头像：</label>
+      <input type="file">
+    </p>
+    <p>
+      <label class="label-title" for="">生日：</label>
+      <input type="date">
+    </p>
+    <p>单选水果</p>
+    <label for="app"> <input type="radio" name="fruit" id="app">苹果</label>
+    <label for="ban"> <input type="radio" name="fruit" id="ban">香蕉</label>
+    <label for="ora"> <input type="radio" name="fruit" id="ora">橘子</label>
+    <p>多选水果</p>
+    <label> <input type="checkbox" checked>苹果</label>
+    <label> <input type="checkbox">香蕉</label>
+    <label> <input type="checkbox">橘子</label>
+    <p>
+      <label class="label-title">tel：</label>
+      <input type="tel">
+    </p>
+    <p>
+      <label class="label-title">search：</label>
+      <input type="search">
+    </p>
+    <p>
+      <label class="label-title">image：</label>
+      <input type="image" src="../images/aim.webp" width="50" height="50">
+    </p>
+    <p>
+      <label class="label-title">submit：</label>
+      <input type="submit">
+    </p>
+    <p>
+      <label class="label-title">button：</label>
+      <input type="button" value="按钮">
+    </p>
+    <p>
+      <label class="label-title">url：</label>
+      <input type="url">
+    </p>
+    <p>
+      <label class="label-title">color：</label>
+      <input type="color">
+    </p>
+    <p>
+      <label class="label-title">range：</label>
+      <input type="range">
+    </p>
+    <p>
+      <label class="label-title">week：</label>
+      <input type="week">
+    </p>
+    <p>
+      <label class="label-title">reset：</label>
+      <input type="reset">
+    </p>
+    <p>
+      <label class="label-title">month：</label>
+      <input type="month">
+    </p>
+    <p>
+      <label class="label-title">hidden：</label>
+      <input type="hidden" value="thehidden">
+    </p>
+    <p>
+      <label class="label-title">time：</label>
+      <input type="time">
+    </p>
+    <p>
+      <label class="label-title">datetime:</label>
+      <input type="datetimeNew">
+    </p>
+    <label class="label-title">下拉选:</label>
+    <select name="fruit">
+      <option value="1">苹果</option>
+      <option value="2">香蕉</option>
+      <option value="3">橙子</option>
+      <option value="4">葡萄</option>
+      <option value="5">梨</option>
+      <option value="6">西瓜</option>
+    </select>
+    <p>
+      <label class="textar-itle">多行文本输入框:</label>
+      <textarea name="" ></textarea>
+    </p>
+
+  </form>
+</body>
+
+</html>
