@@ -1,0 +1,213 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 600px;
+}
+
+li {
+  list-style-position: inside;
+  border-bottom: 1px solid;
+  padding: 0.5em;
+}
+
+li:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+li:last-child {
+  border: none;
+}
+
+/* 关系型选择器 */
+article {
+  border: 1px dashed #999;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+article p {
+  color: #ce5834;
+}
+
+article > p {
+  color: #ac6e3c;
+}
+
+article section h2 {
+  border-bottom: 2px dashed #9e391f;
+}
+
+/* text-align 功能练习 */
+.text-main {
+  border: 2px dashed #999;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.text-info {
+  color: rgb(233, 128, 68);
+}
+
+/* border 样式 */
+.mainTwo {
+  background-color: #a1da99;
+  padding: 10px;
+  margin: 10px 0;
+}
+.infoTwo {
+  padding: 2em;
+}
+
+/* 设置一切特殊样式的border */
+.threeMain {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fourBor {
+  width: 100px;
+  height: 100px;
+  border: 50px solid;
+  border-top-color: #e9b85e;
+  border-right-color: #a2e931;
+  border-bottom-color: #33afa9;
+  border-left-color: #9e239e;
+}
+
+.fourInBor {
+  width: 0px;
+  height: 0px;
+  border: 50px solid;
+  border-top-color: #e9b85e;
+  border-right-color: #a2e931;
+  border-bottom-color: #33afa9;
+  border-left-color: #9e239e;
+}
+
+/* 三角形 */
+.fourOneBor {
+  width: 0px;
+  height: 0px;
+  border: 50px solid;
+  border-top-color: #ce2020;
+  border-right-color: #ffffff00;
+  border-bottom-color: #ffffff00;
+  border-left-color: #ffffff00;
+}
+
+.fourOneRBor {
+  width: 0px;
+  height: 0px;
+  border: 50px solid;
+  border-top-color: #ffffff00;
+  border-right-color: #e9b85e;
+  border-bottom-color: #ffffff00;
+  border-left-color: #ffffff00;
+}
+.fourOneBBor {
+  width: 0px;
+  height: 0px;
+  border: 50px solid;
+  border-top-color: #ffffff00;
+  border-right-color: #ffffff00;
+  border-bottom-color: #28ee42;
+  border-left-color: #ffffff00;
+}
+.fourOneLBor {
+  width: 0px;
+  height: 0px;
+  border: 50px solid;
+  border-top-color: #ffffff00;
+  border-right-color: #ffffff00;
+  border-bottom-color: #ffffff00;
+  border-left-color: #3872ca;
+}
+
+.fourOneLTBor {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid #16b8b0;
+  border-left: 50px solid #3872ca;
+}
+
+/* 边角三角形 */
+.oneLTLBor {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid #e66c1a;
+  border-left: 50px solid #ffffff00;
+}
+.oneLTRBor {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid #bd1414;
+  border-right: 50px solid #ffffff00;
+}
+.oneLBLBor {
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid #5ce43b;
+  border-right: 50px solid #ffffff00;
+}
+.oneLBRBor {
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid #7016c4;
+  border-left: 50px solid #ffffff00;
+}
+
+/*  */
+.fourMain {
+  background-color: #ccc;
+  margin: 20px 0;
+  height: 200px;
+  padding: 20px;
+}
+
+.infoOtwo {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  background-color: #61c0c7;
+  box-shadow: 0 0 0 5px #f50808, 0 0 0 10px #ca6411, 0 0 0 15px #e6c718,
+    0 0 0 20px #2da51e, 0 0 0 25px #7c10e0;
+}
+
+/* fiveMain */
+.fiveMain {
+  background-color: #ddd;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anima {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eb0b0b;
+  animation: heartDance 500ms infinite;
+}
+
+@keyframes heartDance {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
