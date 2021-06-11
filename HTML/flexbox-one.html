@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹性布局</title>
+    <link rel="stylesheet" href="../CSS/flexbox-one.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <!-- flex 容器 -->
+        <section class="flexContainer">
+          <h2>容器的属性：</h2>
+          <p>
+            <label>display: </label>
+            <select class="displaySty">
+              <option value="none" disabled>none</option>
+              <option value="contents" disabled>contents</option>
+              <option value="flex" selected>flex</option>
+              <option value="grid" disabled>grid</option>
+              <option value="table" disabled>table</option>
+              <option value="block" disabled>block</option>
+              <option value="inline" disabled>inline</option>
+              <option value="inline-block" disabled>inline-block</option>
+            </select>
+          </p>
+          <p>
+            <label>flex-direction: </label>
+            <select class="flexDir">
+              <option value=""></option>
+              <option value="row">row</option>
+              <option value="row-reverse">row-reverse</option>
+              <option value="column">column</option>
+              <option value="column-reverse">column-reverse</option>
+            </select>
+          </p>
+          <p>
+            <label>flex-wrap: </label>
+            <select class="flexWrap">
+              <option value=""></option>
+              <option value="nowrap">nowrap</option>
+              <option value="wrap">wrap</option>
+              <option value="wrap-reverse">wrap-reverse</option>
+            </select>
+          </p>
+          <p>
+            <label>flex-flow: </label>
+            <select class="flexFlo" disabled>
+              <option value=""></option>
+              <option value="row">row</option>
+              <option value="row-reverse">row-reverse</option>
+              <option value="column">column</option>
+              <option value="column-reverse">column-reverse</option>
+            </select>
+            <select class="flexFlw" disabled>
+              <option value=""></option>
+              <option value="nowrap">nowrap</option>
+              <option value="wrap">wrap</option>
+              <option value="wrap-reverse">wrap-reverse</option>
+            </select>
+          </p>
+          <p>
+            <label>justify-content: </label>
+            <select class="justCon">
+              <option value=""></option>
+              <option value="flex-start">flex-start</option>
+              <option value="flex-end">flex-end</option>
+              <option value="center">center</option>
+              <option value="space-between">space-between</option>
+              <option value="space-around">space-around</option>
+            </select>
+          </p>
+          <p>
+            <label>align-items: </label>
+            <select class="aligIte">
+              <option value=""></option>
+              <option value="flex-start">flex-start</option>
+              <option value="flex-end">flex-end</option>
+              <option value="center">center</option>
+              <option value="baseline">baseline</option>
+              <option value="stretch">stretch</option>
+            </select>
+          </p>
+          <p>
+            <label>align-content: </label>
+            <select class="aligCon">
+              <option value=""></option>
+              <option value="flex-start">flex-start</option>
+              <option value="flex-end">flex-end</option>
+              <option value="center">center</option>
+              <option value="space-between">space-between</option>
+              <option value="space-around">space-around</option>
+            </select>
+          </p>
+        </section>
+        <!-- flex 项目 -->
+        <section class="flexItem">
+          <h2>项目的属性</h2>
+          <p>
+            <label>order:</label>
+            <input class="order" type="number" value="" />
+          </p>
+          <p>
+            <!-- 有剩余空间时的伸展能力 -->
+            <label>flex-grow:</label>
+            <input class="flexGrow" type="number" value="" />
+          </p>
+          <p>
+            <!-- 容器空间不足时的收缩能力 -->
+            <label>flex-shrink:</label>
+            <input class="flexShink" type="number" value="" />
+          </p>
+          <p>
+            <!-- 没有伸展或收缩时的基本长度 -->
+            <label>flex-basis:</label>
+            <input class="flexBasis" type="number" value="" /> |
+            <code>auto</code>
+          </p>
+          <p>
+            <label>flex:</label>
+            <select class="flex">
+              <option value=""></option>
+              <option value="0 1 auto">默认(0 1 auto)</option>
+              <option value="auto">auto (1 1 auto)</option>
+              <option value="none">none (0 0 auto)</option>
+            </select>
+            | <code>[flex-grow flex-shrink flex-basis ]</code>
+          </p>
+          <p>
+            <label>align-self:</label>
+            <select class="alignSelf">
+              <option value=""></option>
+              <option value="auto">auto</option>
+              <option value="flex-start">flex-start</option>
+              <option value="flex-end">flex-end</option>
+              <option value="center">center</option>
+              <option value="baseline">baseline</option>
+              <option value="stretch">stretch</option>
+            </select>
+          </p>
+        </section>
+      </div>
+      <div class="mainOne">
+        <div class="item itemBasis">1</div>
+        <div class="item itemTwo">2</div>
+        <div class="item itemBasis">3</div>
+        <div class="item itemBasis">4</div>
+        <div class="item itemBasis">5</div>
+        <div class="item itemBasis">6</div>
+        <div class="item itemBasis">7</div>
+        <div class="item itemBasis">8</div>
+        <div class="item itemBasis">9</div>
+      </div>
+    </div>
+
+    <script src="../JS/flexbox-one.js"></script>
+  </body>
+</html>

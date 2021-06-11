@@ -1,0 +1,50 @@
+.app {
+  min-width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.header {
+  margin: 10px;
+  border: 2px dashed #76aa33;
+  padding: 5px;
+}
+
+/* flex 容器  */
+.flexContainer {
+  background-color: #e94921;
+  padding: 5px;
+  border-radius: 1em;
+}
+
+.header p label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+/* flex 项目 */
+.flexItem {
+  background-color: #ba21e9;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 1em;
+}
+
+.mainOne {
+  background-color: #69ad4e;
+  padding: 5px;
+  width: 800px;
+  height: 700px;
+  display: flex;
+  overflow: auto;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #f0742c;
+  margin: 10px;
+}
