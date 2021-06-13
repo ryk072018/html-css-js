@@ -1,0 +1,52 @@
+.main-one {
+  padding: 5px;
+  margin: 10px auto;
+  background-color: #ccc;
+}
+
+.main-c {
+  background-color: #ccc;
+  border: 2px solid #fc0808;
+  width: 500px;
+  height: 100px;
+  margin: 10px;
+}
+.main-cone {
+  display: flex;
+}
+
+.one-a {
+  background-color: #fcc;
+}
+
+.one-b {
+  background-color: #cfc;
+}
+
+.one-c {
+  background-color: #ccf;
+}
+
+.one-d {
+  background-color: #356de7;
+}
+
+.main-ctwo {
+  display: flex;
+}
+
+.tc-item {
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
+
+/* flex-grow */
+.main-cThree {
+  display: flex;
+}
+.three-a,
+.three-b,
+.three-c {
+  width: 100px;
+}

@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex理解</title>
+    <link rel="stylesheet" href="../CSS/flexTwo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .main {
-      background-color: #ccc;
-      display: flex;
-    }
-
-    .item {
-      background-color: #a1a132;
-      border: 1px solid #333;
-      border-radius: 5px;
-      flex: auto;
-      margin: 1px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="main">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-  </div>
-</body>
-
+  <body>
+    <div class="main">
+      <section class="main-one">
+        <p>
+          <label>flex-direction:</label>
+          <select type="text" class="sel-dir">
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+        </p>
+        <div class="main-cone main-c">
+          <div class="item one-a">AAA</div>
+          <div class="item one-b">BB</div>
+          <div class="item one-c">C</div>
+        </div>
+      </section>
+      <section class="main-one">
+        <p>
+          <label>flex-wrap:</label>
+          <select type="text" class="sel-wra">
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+            <option value="wrap-reverse">wrap-reverse</option>
+          </select>
+        </p>
+        <div class="main-ctwo main-c">
+          <div class="item one-a two-a tc-item">A</div>
+          <div class="item one-b two-b tc-item">B</div>
+          <div class="item one-c two-c tc-item">C</div>
+          <div class="item one-d two-d tc-item">D</div>
+        </div>
+      </section>
+      <section class="main-one">
+        <p>
+          <label
+            >flex-grow：A：<input class="numA" type="number" /> B：<input
+              class="numB"
+              type="number" />C：<input class="numC" type="number"
+          /></label>
+        </p>
+        <div class="main-cThree main-c">
+          <div class="item one-a three-a tc-item">A</div>
+          <div class="item one-b three-b tc-item">B</div>
+          <div class="item one-c three-c tc-item">C</div>
+        </div>
+      </section>
+    </div>
+    <script src="../JS/flexTwo.js"></script>
+  </body>
 </html>

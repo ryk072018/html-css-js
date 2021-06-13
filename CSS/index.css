@@ -40,7 +40,7 @@
   min-width: 180px;
   text-align: center;
   border-radius: 10px;
-  padding-top: 10px;
+  padding: 10px;
   box-shadow: 0px 0px 10px #606060;
 }
 
@@ -59,7 +59,7 @@
 }
 
 p {
-  margin-bottom: 6px;
+  padding: 8px;
 }
 
 a {
