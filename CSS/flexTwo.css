@@ -32,7 +32,13 @@
 }
 
 .one-d {
-  background-color: #356de7;
+  background-color: #497be6;
+}
+.one-e {
+  background-color: #a749e6;
+}
+.one-f {
+  background-color: #6649e6;
 }
 
 .tc-item {
@@ -53,10 +59,21 @@
   width: 70%;
 }
 
-
 /* flex */
-.label-six{
+.label-six {
   display: inline-block;
-  width: 80px;
+  width: 100px;
   text-align: right;
+}
+
+.eight-main {
+  flex-wrap: wrap;
+}
+.eight-a,
+.eight-b,
+.eight-c,
+.eight-d,
+.eight-e,
+.eight-f {
+  width: 20%;
 }

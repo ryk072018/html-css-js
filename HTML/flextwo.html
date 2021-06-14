@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex理解</title>
+    <title>flex使用</title>
     <link rel="stylesheet" href="../CSS/flexTwo.css" />
   </head>
 
@@ -12,7 +12,7 @@
       <section class="main-one">
         <p>
           <label>flex-direction:</label>
-          <select type="text" class="sel-dir">
+          <select class="sel-dir">
             <option value="row">row</option>
             <option value="row-reverse">row-reverse</option>
             <option value="column">column</option>
@@ -28,7 +28,7 @@
       <section class="main-one">
         <p>
           <label>flex-wrap:</label>
-          <select type="text" class="sel-wra">
+          <select class="sel-wra">
             <option value="nowrap">nowrap</option>
             <option value="wrap">wrap</option>
             <option value="wrap-reverse">wrap-reverse</option>
@@ -42,7 +42,7 @@
         </div>
       </section>
       <section class="main-one">
-        <label>flex-grow：</label>
+        <label>flex-grow：表示有剩余空间时，元素放大比例</label>
         <p>A：<input class="numA" type="number" /></p>
         <p>B：<input class="numB" type="number" /></p>
         <p>C：<input class="numC" type="number" /></p>
@@ -54,7 +54,7 @@
       </section>
 
       <section class="main-one">
-        <label>flex-shrink：</label>
+        <label>flex-shrink：表示空间不足时，元素缩小比例</label>
         <p>A：<input class="fouNumA" type="number" /></p>
         <p>B：<input class="fouNumB" type="number" /></p>
         <p>C：<input class="fouNumC" type="number" /></p>
@@ -67,7 +67,7 @@
       </section>
 
       <section class="main-one">
-        <label>flex-basis：</label>
+        <label>flex-basis：表示项目本来大小</label>
         <p>A：<input class="fiveNumA" type="number" /></p>
         <p>B：<input class="fiveNumB" type="number" /></p>
         <p>C：<input class="fiveNumC" type="number" /></p>
@@ -105,6 +105,78 @@
           <div class="item one-a six-item six-a">A</div>
           <div class="item one-b six-item six-b">B</div>
           <div class="item one-c six-item six-c">C</div>
+        </div>
+      </section>
+
+      <section class="main-one">
+        <p>
+          <label>justify-content:</label>
+          <select class="just-cont">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+          </select>
+        </p>
+        <div class="main-c seven-main">
+          <div class="item one-a">A</div>
+          <div class="item one-b">B</div>
+          <div class="item one-c">C</div>
+        </div>
+      </section>
+
+      <section class="main-one">
+        <p>
+          <label class="label-six">align-items:</label>
+          <select class="alignItems">
+            <option value=""></option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </p>
+        <p>
+          <label class="label-six">align-center:</label>
+          <select class="aliContent">
+            <option value=""></option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </p>
+        <div class="main-c eight-main">
+          <div class="item one-a eight-a">A</div>
+          <div class="item one-b eight-b">B</div>
+          <div class="item one-c eight-c">C</div>
+          <div class="item one-d eight-d">D</div>
+          <div class="item one-e eight-e">E</div>
+          <div class="item one-f eight-f">F</div>
+        </div>
+      </section>
+
+      <section class="main-one">
+        <p>
+          <label>align-self: A:</label>
+          <select class="alignSelf">
+            <option value="auto">auto</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+            <option value="stretch">stretch</option>
+          </select>
+        </p>
+
+        <div class="main-c nine-main">
+          <div class="item one-a nine-a">A</div>
+          <div class="item one-b nine-b">B</div>
+          <div class="item one-c nine-c">C</div>
         </div>
       </section>
     </div>

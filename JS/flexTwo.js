@@ -112,3 +112,38 @@ sixNumA3.addEventListener("change", changeA, true);
 sixNumABC1.addEventListener("change", changeABC, true);
 sixNumABC2.addEventListener("change", changeABC, true);
 sixNumABC3.addEventListener("change", changeABC, true);
+
+// justify-content
+const mainSeven = document.querySelector(".seven-main");
+const justCont = document.querySelector(".just-cont");
+
+const changeJustCon = () => {
+  mainSeven.style.justifyContent = justCont.value;
+};
+
+justCont.addEventListener("change", changeJustCon, true);
+
+// align-items align-content
+const mainEight = document.querySelector(".eight-main");
+const aliItems = document.querySelector(".alignItems");
+const aliContent = document.querySelector(".aliContent");
+
+const changeAlignItems = () => {
+  mainEight.style.alignItems = aliItems.value;
+};
+const changeAlignContent = () => {
+  mainEight.style.alignContent = aliContent.value;
+};
+
+aliItems.addEventListener("change", changeAlignItems, true);
+aliContent.addEventListener("change", changeAlignContent, true);
+
+// align-self
+const mainNineA = document.querySelector(".nine-a");
+const alignSelf = document.querySelector(".alignSelf");
+
+const changeAlignSelf = () => {
+  mainNineA.style.alignSelf = alignSelf.value;
+};
+
+alignSelf.addEventListener("change", changeAlignSelf, true);
