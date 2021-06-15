@@ -1,0 +1,164 @@
+/* 划分网格 */
+.boxMain {
+  height: 300px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+.boxOne {
+  display: grid;
+  grid-template-columns: 200px 200px 270px;
+  grid-template-rows: 100px 60px auto;
+}
+
+.boxa {
+  background-color: #bbf51c;
+}
+.boxb {
+  background-color: #179cf5;
+}
+.boxc {
+  background-color: #0a85eb;
+}
+.boxd {
+  background-color: #1cf5a2;
+}
+.boxe {
+  background-color: #1ceef5;
+}
+
+.boxTwo {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  grid-template-rows: 100px auto;
+}
+
+/* 1fr 表示剩余空间占有份数 1fr表示占用1份 */
+.boxThree {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+/* 网格线1 */
+.boxFour {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.boxFa {
+  background-color: #80c063;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.boxFb {
+  background-color: #b16d4e;
+}
+.boxFc {
+  background-color: #48af73;
+}
+.boxFd {
+  background-color: #498880;
+}
+.boxFe {
+  background-color: #55b3b3;
+}
+
+/* 网格线2 简写 */
+.boxFive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.boxFia {
+  background-color: #c08563;
+  grid-area: 1/1/3/3;
+}
+.boxFib {
+  background-color: #a2b14e;
+}
+.boxFic {
+  background-color: #af6548;
+}
+.boxFid {
+  background-color: #744988;
+}
+.boxFie {
+  background-color: #69c22e;
+}
+
+.boxItem {
+  border: 2px dashed #111;
+  padding: 1em;
+  margin: 3em;
+}
+
+/* 命名网格线 */
+.boxSix {
+  display: grid;
+  grid-template-rows: [top] 1fr [middle] 1fr [bottom];
+  grid-template-columns: [left] 100px [center] 1fr [right];
+}
+
+.boxSixa {
+  background-color: #c149d1;
+  grid-area: top/left/bottom/center;
+}
+
+.boxSixb {
+  background-color: #4db943;
+}
+.boxSixc {
+  background-color: #87d142;
+}
+
+/* 命名网格区域 */
+.boxSeven {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-areas: "header header" "nav main" "footer footer";
+}
+
+.boxSevena {
+  background-color: #d135e6;
+  grid-area: header;
+}
+
+.boxSevenb {
+  background-color: #4db943;
+}
+.boxSevenc {
+  background-color: #87d142;
+}
+.boxSevend {
+  background-color: #333;
+  grid-area: footer;
+}
+
+/* 设置行间距 */
+.boxEight {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 20px;
+}
+.eighta {
+  background-color: #65dd75;
+}
+.eightb {
+  background-color: #78aada;
+}
+.eightc {
+  background-color: #4087b6;
+}
+.eightd {
+  background-color: #7b3981;
+}
+.eighte {
+  background-color: #ddc765;
+}
+.eightf {
+  background-color: #6d65dd;
+}

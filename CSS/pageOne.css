@@ -1,0 +1,57 @@
+/* by kyr */
+* {
+  margin: 0;
+}
+
+/* header */
+.header {
+  background-color: #010101;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topNav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.topNav a {
+  color: #fff;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.topNav a:hover {
+  font-size: 1.2em;
+  color: #f71212;
+}
+
+/* 内容 */
+.content {
+  display: flex;
+}
+.main {
+  background-color: #eb840e;
+  order: 1;
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.leftNav {
+  width: 150px;
+  background-color: #00d3f8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* footer */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 1em;
+}

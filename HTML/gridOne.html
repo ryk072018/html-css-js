@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>练习grid</title>
+    <link rel="stylesheet" href="../CSS/gridOne.css" />
+  </head>
+  <body>
+    <section class="boxItem">
+      <p>划分网格：使用px</p>
+      <div class="boxMain boxOne">
+        <div class="boxa"></div>
+        <div class="boxb"></div>
+        <div class="boxc"></div>
+        <div class="boxd"></div>
+        <div class="boxe"></div>
+      </div>
+    </section>
+    <section class="boxItem">
+      <p>划分网格：使用auto 和 %</p>
+      <div class="boxMain boxTwo">
+        <div class="boxa"></div>
+        <div class="boxb"></div>
+        <div class="boxc"></div>
+        <div class="boxd"></div>
+        <div class="boxe"></div>
+      </div>
+    </section>
+    <section class="boxItem">
+      <p>划分网格：使用单位fr 表示把剩余空间平分，1fr表示占用1份</p>
+      <div class="boxMain boxThree">
+        <div class="boxa"></div>
+        <div class="boxb"></div>
+        <div class="boxc"></div>
+        <div class="boxd"></div>
+        <div class="boxe"></div>
+      </div>
+    </section>
+    <!-- 网格线 -->
+    <section class="boxItem">
+      <p>网格线：</p>
+      <code>
+        <pre>
+        .boxFour {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+        }
+        .boxFa {
+          background-color: #80c063;
+          grid-row-start: 1;
+          grid-column-start: 1;
+          grid-row-end: 3;
+          grid-column-end: 3;
+        }
+      </pre
+        >
+      </code>
+      <div class="boxMain boxFour">
+        <div class="boxFa"></div>
+        <div class="boxFb"></div>
+        <div class="boxFc"></div>
+        <div class="boxFd"></div>
+        <div class="boxFe"></div>
+      </div>
+    </section>
+    <section class="boxItem">
+      <p>网格线：（简写）grid-area:1/1/3/3</p>
+      <code>
+        <pre>
+        .boxFive {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .boxFia {
+          background-color: #c08563;
+          grid-area: 1/1/3/3;
+        }
+      </pre
+        >
+      </code>
+      <div class="boxMain boxFive">
+        <div class="boxFia"></div>
+        <div class="boxFib"></div>
+        <div class="boxFic"></div>
+        <div class="boxFid"></div>
+        <div class="boxFie"></div>
+        <div class="boxFic"></div>
+      </div>
+    </section>
+
+    <!-- 命名网格线 -->
+    <section class="boxItem">
+      <p>命名网格线:</p>
+      <code>
+        <pre>
+          .boxSix {
+            display: grid;
+            grid-template-rows: [top] 1fr [middle] 1fr [bottom];
+            grid-template-columns: [left] 100px [center] 1fr [right];
+          }
+          
+          .boxSixa {
+            background-color: #c149d1;
+            grid-area: top/left/bottom/center;
+          }   
+      </pre
+        >
+      </code>
+      <div class="boxMain boxSix">
+        <div class="boxSixa"></div>
+        <div class="boxSixb"></div>
+        <div class="boxSixc"></div>
+      </div>
+    </section>
+
+    <!-- 命名网格区域 -->
+    <section class="boxItem">
+      <p>命名网格区域: 比如三行两列，grid-template-areas的值对应3行</p>
+      <code>
+        <pre>
+          .boxSeven {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-areas: "header header" "nav main" "footer footer";
+          }
+          
+          .boxSevena {
+            background-color: #d135e6;
+            grid-area: header;
+          }
+        
+          .boxSevend {
+            background-color: #333;
+            grid-area: footer;
+          }               
+        </pre>
+      </code>
+      <div class="boxMain boxSeven">
+        <div class="boxSevena">A</div>
+        <div class="boxSevenb">B</div>
+        <div class="boxSevenc">C</div>
+        <div class="boxSevend">D</div>
+      </div>
+    </section>
+
+    <!-- 设置行间距 -->
+    <section class="boxItem">
+      <p>设置行间距: grid-gap, grid-row-gap, grid-column-gap</p>
+      <code>
+        <pre>
+          .boxEight {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px 20px;
+          }       
+          </pre
+        >
+      </code>
+      <div class="boxMain boxEight">
+        <div class="eighta">A</div>
+        <div class="eightb">B</div>
+        <div class="eightc">C</div>
+        <div class="eightd">D</div>
+        <div class="eighte">E</div>
+        <div class="eightf">F</div>
+      </div>
+    </section>
+  </body>
+</html>
