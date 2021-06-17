@@ -162,3 +162,22 @@
 .eightf {
   background-color: #6d65dd;
 }
+
+/* 设置水平方向对齐 */
+.boxNine,
+.boxTen {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nineItem {
+  padding: 5px;
+}
+
+/* 网格对齐方式 */
+.boxEleven {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+}
