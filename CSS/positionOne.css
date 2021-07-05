@@ -1,0 +1,12 @@
+.app {
+  background-color: #ccc;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #db3737;
+  position: relative;
+  left: 20px;
+}
